@@ -1,3 +1,6 @@
+var moment = require('moment'); // require
+
+
 /* global moment */
 
 console.log("hello world");
