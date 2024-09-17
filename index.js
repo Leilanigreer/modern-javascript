@@ -3,11 +3,11 @@ import moment from 'moment'; // This is ES6 which gets translated by babel
 var daddy_jokes=require('daddy-jokes');
 
 
+console.log("hello Brian! Want a dad joke?");
 console.log(daddy_jokes());
-console.log("hello world");
 
 var datetime = moment().startOf("day").fromNow();
-console.log(datetime);
+console.log(`Our day started ${datetime} hours ago!`);
 
 console.log(moment().calendar());
 
@@ -36,21 +36,5 @@ for (var n of fibonacci) {
   console.log(n);
 }
 
-
-function f() {
-  {
-    let x;
-    {
-      // this is ok since it's a block scoped name
-      const x = "sneaky";
-      // error, was just defined with `const` above
-      x = "foo";
-    }
-    // this is ok since it was declared with `let`
-    x = "bar";
-    // error, already declared above in this block
-    // let x = "inner";
-  }
-}
-
-
+console.log(`Would you like to hear another joke?
+  ${daddy_jokes()}`);
