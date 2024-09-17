@@ -1,4 +1,5 @@
-var moment = require('moment'); // require
+import moment from 'moment'; // This is ES6 which gets translated by babel
+// var moment = require('moment'); // require - this is the old version
 var daddy_jokes=require('daddy-jokes');
 
 
